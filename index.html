@@ -1,24 +1,21 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#17130f;color:#f6f0e7}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<meta name="theme-color" content="#17130f">
 <title>EKATERINA ASTRA</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:wght@500&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: одна колонка-«маршрут», тонкая вертикальная линия слева связывает разделы, как точки пути. Звезда Астры — единственный акцент. */
+/* палитра — как на ekaterinaastra.github.io */
 :root{
-  --bg:#f4f2f6; --surface:#ffffff; --fg:#1d1823; --muted:#6b6274; --line:#ddd6e2;
-  --accent:#5e2b56; --accent-soft:#efe3ec; --on-accent:#ffffff; --star:#b07a3c;
+  --bg:#17130f; --surface:#221c17; --fg:#f6f0e7; --muted:#bfb2a3; --line:#3b322a;
+  --accent:#d4ae84; --accent-soft:#2c241c; --on-accent:#17130f; --star:#d4ae84; --aster:#e8d4b9;
   --display:"Prata", "Times New Roman", Georgia, serif;
+  --logo:"Cormorant Garamond", "Times New Roman", Georgia, serif;
   --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
-}
-@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#141019; --surface:#1d1823; --fg:#f1ecf4; --muted:#a79cb1; --line:#342c3c;
-  --accent:#d9a9cd; --accent-soft:#2e2231; --on-accent:#1a1320; --star:#e0b47c; color-scheme:dark } }
-:root[data-theme="dark"]{
-  --bg:#141019; --surface:#1d1823; --fg:#f1ecf4; --muted:#a79cb1; --line:#342c3c;
-  --accent:#d9a9cd; --accent-soft:#2e2231; --on-accent:#1a1320; --star:#e0b47c; color-scheme:dark }
+  color-scheme:dark }
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);
@@ -31,7 +28,8 @@ p{margin:0}
 
 /* шапка */
 header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
-.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 14px/1 var(--body);letter-spacing:.22em}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;font:500 22px/1 var(--logo);letter-spacing:.06em;white-space:nowrap}
+.mono{width:44px;height:37px;overflow:visible;flex:0 0 auto}.mono-star{fill:var(--star)}
 .star{width:18px;height:18px;flex:0 0 auto;fill:var(--star)}
 header nav{display:flex;gap:18px;font-size:14px}
 header nav a{text-decoration:none;color:var(--muted)}
@@ -129,7 +127,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:grid;gap
 
 <div class="wrap">
   <header>
-    <a class="mark" href="#top"><svg class="star"><use href="#star"/></svg>EKATERINA ASTRA</a>
+    <a class="mark" href="#top" aria-label="EKATERINA ASTRA, на главную"><svg class="mono" viewBox="-70 0 350 290" aria-hidden="true"><g fill="currentColor"><polygon points="144,18 157,18 246,272 216,272"/><polygon points="144,18 152,18 77,272 69,272"/><rect x="48" y="268" width="48" height="6"/><rect x="198" y="268" width="68" height="6"/><rect x="97" y="187" width="102" height="5"/></g><path class="mono-star" d="M147 160 Q151 186 177 190 Q151 194 147 220 Q143 194 117 190 Q143 186 147 160 Z"/><text x="150" y="262" text-anchor="end" font-family="Pinyon Script, cursive" font-size="250" fill="currentColor">E</text></svg><span>EKATERINA ASTRA</span></a>
     <nav aria-label="Разделы">
       <a href="#route">Маршрут</a>
       <a href="#care">Подбор ухода</a>
